@@ -1,11 +1,11 @@
 <?php return array (
   'parameters' => 
   array (
-    'database_host' => '127.0.0.1',
+    'database_host' => 'us-cdbr-iron-east-01.cleardb.net',
     'database_port' => '',
-    'database_name' => 'prestashop',
-    'database_user' => 'root',
-    'database_password' => '',
+    'database_name' => 'heroku_d8850a161f2dd25',
+    'database_user' => 'be64fd4fcdd912',
+    'database_password' => 'abe9b0b5',
     'database_prefix' => 'ps_',
     'database_engine' => 'InnoDB',
     'mailer_transport' => 'smtp',

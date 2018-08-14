@@ -72,9 +72,9 @@
     array (
       'main' => 
       array (
-        'type' => 'stream',
-        'path' => '%kernel.logs_dir%/%kernel.environment%.log',
-        'level' => 'notice',
+        'type' => 'console',
+        'channels' => ['!event', '!doctrine', '!console'],
+        'process_psr_3_messages' => 'false',
       ),
       'legacy' => 
       array (
@@ -170,7 +170,7 @@
     ),
     'cache' => 
     array (
-      'enabled' => true,
+      'enabled' => false,
       'adapter' => 'guzzle.cache',
     ),
     'clients' => 
