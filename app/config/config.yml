@@ -37,10 +37,10 @@ framework:
 # Monolog configuration #
 monolog:
     handlers:
-        main:
-            type: stream
-            path: "%kernel.logs_dir%/%kernel.environment%.log"
-            level: notice
+        console:
+            type:   console
+            process_psr_3_messages: false
+            channels: ['!event', '!doctrine', '!console']
         legacy:
             type: service
             id: prestashop.handler.log
